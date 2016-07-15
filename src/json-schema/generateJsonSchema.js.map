@@ -1,0 +1,1 @@
+{"version":3,"file":"generateJsonSchema.js","sourceRoot":"","sources":["generateJsonSchema.ts"],"names":[],"mappings":"AAAA;;GAEG;AAEH,IAAI,cAAc,GAAG,OAAO,CAAC,gBAAgB,CAAC,CAAC;AAQ/C,4BAA4B,KAAY,EAAE,QAAa;IACnD,MAAM,CAAC,cAAc,CAAC,IAAI,CAAC,KAAK,EAAE,QAAQ,CAAC,CAAC;AAChD,CAAC"}

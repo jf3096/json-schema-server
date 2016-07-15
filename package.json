@@ -1,0 +1,22 @@
+{
+  "name": "schema-server",
+  "version": "1.0.0",
+  "description": "A server use to validate and constraint api response json data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ailun She",
+  "license": "ISC",
+  "dependencies": {
+    "es6-promise": "^3.2.1",
+    "generate-schema": "^2.1.1",
+    "isomorphic-fetch": "^2.2.1",
+    "jsonfile": "^2.3.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "supertest": "^1.2.0"
+  }
+}
