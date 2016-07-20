@@ -1,4 +1,4 @@
-import {getWritePath} from '../../src/io/json2file';
+import {getWritePath, createFolderByUrl} from '../../src/io/json2file';
 /**
  * Created by allen on 2016/7/15.
  */
@@ -23,10 +23,16 @@ describe('getWritePath', ()=> {
     });
 
     it('empty string', function () {
-        getWritePath('').should.equal('');
+        (()=>getWritePath('')).should.throw();
     });
 
     it('null value', function () {
-        (getWritePath(null) === null).should.be.true;
+        (()=>getWritePath(null)).should.throw();
+    });
+});
+
+describe('createFolderByUrl', ()=> {
+    it('normal sample #1', function () {
+        createFolderByUrl("github.com/jf3096/bilibili-live-video-noty.git");
     });
 });

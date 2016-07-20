@@ -18,10 +18,15 @@ describe('getWritePath', function () {
         json2file_1.getWritePath('https://github.com/jf3096/bilibili-live-video-noty.git').should.equal('github.com/jf3096/bilibili-live-video-noty.git');
     });
     it('empty string', function () {
-        json2file_1.getWritePath('').should.equal('');
+        (function () { return json2file_1.getWritePath(''); }).should.throw();
     });
     it('null value', function () {
-        (json2file_1.getWritePath(null) === null).should.be.true;
+        (function () { return json2file_1.getWritePath(null); }).should.throw();
+    });
+});
+describe('createFolderByUrl', function () {
+    it('normal sample #1', function () {
+        json2file_1.createFolderByUrl("github.com/jf3096/bilibili-live-video-noty.git");
     });
 });
 //# sourceMappingURL=json2file.js.map
